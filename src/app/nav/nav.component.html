@@ -1,0 +1,31 @@
+<nav class="navbar" style="background-color: #e3f2fd">
+  <div class="container-fluid">
+    <a class="navbar-brand">{{expectProp.title}}</a>
+    <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link "  routerLink="/home-component" routerLinkActive="active"ariaCurrentWhenActive="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/posts-component" routerLinkActive="active"ariaCurrentWhenActive="page"  href="#">Posts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  routerLink="/" routerLinkActive="active"ariaCurrentWhenActive="page"   href="#">Something</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " routerLink="/mydash-component" ariaCurrentWhenActive="page" >My Dash</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " routerLink="/mock-view-component" ariaCurrentWhenActive="page" >Mock View</a>
+        </li>
+      </ul>
+    <form role="search" class="d-flex">
+      <input type="text" class="form-control me-2" type="search" placeholder="search" aria-label="Search"/>
+      <button
+        class="btn btn-lg"
+      >
+    Search</button>
+    </form>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>

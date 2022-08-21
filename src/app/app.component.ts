@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'appproj1';
+  nav = {title : 'Appproj1'}
+  title = 'Title'
+  field1: {
+    name: "tico"
+    text:" hi"
+
+  }
+
+  onMediaItemDelete(){
+
+  }
 }

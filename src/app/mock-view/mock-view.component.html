@@ -1,0 +1,22 @@
+
+<div class="container" >
+<mat-card class="example-card" *ngFor="let item of items " >
+  <mat-card-header>
+    <mat-card-title>{{item.incident_id}}</mat-card-title>
+    <mat-card-subtitle>{{item.incident_date}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p> This happened in  {{item.state}} in {{item.city_or_county}}  </p>
+    <p>  {{item.number_killed}} Killed   </p>
+    <p>  {{item.number_injured }} Injured   </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <p class="card-footer text-muted">Makes you feel: </p>
+    <mat-button-toggle-group name="rank" aria-label="Rank Feeling">
+      <mat-button-toggle value="sad"><mat-icon aria-hidden="false" aria-label="Face icon" fontIcon="sentiment_dissatisfied"></mat-icon></mat-button-toggle>
+      <mat-button-toggle value="more sad"><mat-icon aria-hidden="false" aria-label="Face Icon" fontIcon=" sentiment_very_dissatisfiede"></mat-icon></mat-button-toggle>
+    </mat-button-toggle-group>
+  </mat-card-actions>
+</mat-card>
+</div>
+
